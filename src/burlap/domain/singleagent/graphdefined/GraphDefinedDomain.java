@@ -24,6 +24,7 @@ import burlap.oomdp.singleagent.GroundedAction;
 import burlap.oomdp.singleagent.SADomain;
 import burlap.oomdp.singleagent.common.SimpleAction;
 import burlap.oomdp.singleagent.explorer.TerminalExplorer;
+import burlap.oomdp.visualizer.Visualizer;
 
 
 /**
@@ -601,6 +602,20 @@ public class GraphDefinedDomain implements DomainGenerator {
 		State s = GraphDefinedDomain.getState(domain, 0);
 		TerminalExplorer exp = new TerminalExplorer(domain, s);
 		exp.explore();
+	}
+
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

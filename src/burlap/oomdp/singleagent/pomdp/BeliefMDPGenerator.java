@@ -12,6 +12,7 @@ import burlap.oomdp.core.states.State;
 import burlap.oomdp.singleagent.*;
 import burlap.oomdp.singleagent.pomdp.beliefstate.BeliefState;
 import burlap.oomdp.singleagent.pomdp.beliefstate.EnumerableBeliefState;
+import burlap.oomdp.visualizer.Visualizer;
 
 
 /**
@@ -461,6 +462,20 @@ public class BeliefMDPGenerator implements DomainGenerator {
 		
 		
 		
+	}
+
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 

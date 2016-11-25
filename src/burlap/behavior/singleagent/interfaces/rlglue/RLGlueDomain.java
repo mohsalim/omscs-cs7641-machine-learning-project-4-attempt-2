@@ -10,6 +10,8 @@ import burlap.oomdp.singleagent.Action;
 import burlap.oomdp.singleagent.GroundedAction;
 import burlap.oomdp.singleagent.SADomain;
 import burlap.oomdp.singleagent.common.SimpleAction;
+import burlap.oomdp.visualizer.Visualizer;
+
 import org.rlcommunity.rlglue.codec.taskspec.TaskSpec;
 import org.rlcommunity.rlglue.codec.taskspec.ranges.DoubleRange;
 import org.rlcommunity.rlglue.codec.taskspec.ranges.IntRange;
@@ -166,5 +168,18 @@ public class RLGlueDomain implements DomainGenerator {
 		protected State performActionHelper(State s, GroundedAction ga) {
 			throw new RuntimeException("RLGlue Actions cannot be applied to arbitrary states; they can only be performed in an Environment.");
 		}
+	}
+
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

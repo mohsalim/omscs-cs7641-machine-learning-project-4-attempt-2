@@ -15,6 +15,7 @@ import burlap.oomdp.core.states.MutableState;
 import burlap.oomdp.singleagent.*;
 import burlap.oomdp.singleagent.common.SimpleAction;
 import burlap.oomdp.singleagent.explorer.VisualExplorer;
+import burlap.oomdp.visualizer.Visualizer;
 
 
 /**
@@ -780,6 +781,18 @@ public class CartPoleDomain implements DomainGenerator {
 		
 		exp.initGUI();
 		
+	}
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

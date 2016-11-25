@@ -7,6 +7,7 @@ import burlap.behavior.singleagent.auxiliary.StateEnumerator;
 import burlap.oomdp.singleagent.FullActionModel;
 import burlap.oomdp.singleagent.GroundedAction;
 import burlap.oomdp.statehashing.HashableStateFactory;
+import burlap.oomdp.visualizer.Visualizer;
 import burlap.oomdp.auxiliary.DomainGenerator;
 import burlap.oomdp.core.Attribute;
 import burlap.oomdp.core.Attribute.AttributeType;
@@ -213,6 +214,19 @@ public class TabulatedDomainWrapper implements DomainGenerator {
 			}
 			return sourceSet;
 		}
+	}
+
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

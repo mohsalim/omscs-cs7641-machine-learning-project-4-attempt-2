@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import burlap.assignment4.util.AgentPainter;
+import burlap.assignment4.util.LocationPainter;
+import burlap.assignment4.util.WallPainter;
 import burlap.behavior.policy.Policy;
 import burlap.behavior.singleagent.auxiliary.valuefunctionvis.ValueFunctionVisualizerGUI;
 import burlap.behavior.valuefunction.ValueFunction;
@@ -26,6 +29,7 @@ import burlap.oomdp.singleagent.SADomain;
 import burlap.oomdp.singleagent.common.SimpleAction;
 import burlap.oomdp.singleagent.explorer.TerminalExplorer;
 import burlap.oomdp.singleagent.explorer.VisualExplorer;
+import burlap.oomdp.visualizer.StateRenderLayer;
 import burlap.oomdp.visualizer.Visualizer;
 
 
@@ -961,5 +965,16 @@ public class GridWorldDomain implements DomainGenerator {
 		
 	}
 	
+	public Visualizer getVisualizer() {
+		return new Visualizer(this.getStateRenderLayer());
+	}
+	
+	public StateRenderLayer getStateRenderLayer() {
+		StateRenderLayer rl = new StateRenderLayer();
+		rl.addStaticPainter(new WallPainter(map));
+		rl.addObjectClassPainter(CLASSLOCATION, new LocationPainter(map));
+		rl.addObjectClassPainter(CLASSAGENT, new AgentPainter(map));
 
+		return rl;
+	}
 }

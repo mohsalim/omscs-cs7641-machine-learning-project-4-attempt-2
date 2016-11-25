@@ -12,6 +12,7 @@ import burlap.oomdp.core.states.MutableState;
 import burlap.oomdp.singleagent.*;
 import burlap.oomdp.singleagent.explorer.TerminalExplorer;
 import burlap.oomdp.singleagent.explorer.VisualExplorer;
+import burlap.oomdp.visualizer.Visualizer;
 
 /**
  * This is a domain generator for the classic relational blocks world domain. There exists a single table and any number of blocks that can be stacked
@@ -489,6 +490,20 @@ public class BlocksWorld implements DomainGenerator {
 			exp.initGUI();
 		}
 		
+	}
+
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 

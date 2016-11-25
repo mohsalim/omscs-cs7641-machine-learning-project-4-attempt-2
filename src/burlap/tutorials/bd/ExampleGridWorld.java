@@ -485,4 +485,10 @@ public class ExampleGridWorld implements DomainGenerator{
 
 	}
 
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

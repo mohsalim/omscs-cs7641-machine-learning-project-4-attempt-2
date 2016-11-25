@@ -10,6 +10,7 @@ import burlap.behavior.singleagent.planning.stochastic.policyiteration.PolicyIte
 import burlap.behavior.singleagent.planning.stochastic.valueiteration.ValueIteration;
 import burlap.behavior.valuefunction.ValueFunction;
 import burlap.domain.singleagent.gridworld.GridWorldDomain;
+import burlap.oomdp.auxiliary.DomainGenerator;
 import burlap.oomdp.core.Domain;
 import burlap.oomdp.core.TerminalFunction;
 import burlap.oomdp.core.states.State;
@@ -39,7 +40,7 @@ public class AnalysisRunner {
 		}
 
 	}
-	public void runValueIteration(BasicGridWorld gen, Domain domain,
+	public void runValueIteration(DomainGenerator gen, Domain domain,
 			State initialState, RewardFunction rf, TerminalFunction tf, boolean showPolicyMap) {
 		System.out.println("//Value Iteration Analysis//");
 		ValueIteration vi = null;
@@ -77,7 +78,7 @@ public class AnalysisRunner {
 		}
 	}
 
-	public void runPolicyIteration(BasicGridWorld gen, Domain domain,
+	public void runPolicyIteration(DomainGenerator gen, Domain domain,
 			State initialState, RewardFunction rf, TerminalFunction tf, boolean showPolicyMap) {
 		System.out.println("//Policy Iteration Analysis//");
 		PolicyIteration pi = null;
@@ -128,7 +129,7 @@ public class AnalysisRunner {
 
 	}
 	
-	public void runQLearning(BasicGridWorld gen, Domain domain,
+	public void runQLearning(DomainGenerator gen, Domain domain,
 			State initialState, RewardFunction rf, TerminalFunction tf,
 			SimulatedEnvironment env, boolean showPolicyMap) {
 		System.out.println("//Q Learning Analysis//");

@@ -13,6 +13,7 @@ import burlap.oomdp.stochasticgames.SGAgentType;
 import burlap.oomdp.stochasticgames.SGDomain;
 import burlap.oomdp.stochasticgames.agentactions.GroundedSGAgentAction;
 import burlap.oomdp.stochasticgames.agentactions.SGAgentAction;
+import burlap.oomdp.visualizer.Visualizer;
 
 
 /**
@@ -225,6 +226,19 @@ public class SGToSADomain implements DomainGenerator {
 		public GroundedAction copy() {
 			return new GroundedSObParamedAAActionWrapper(this.action, this.wrappedSGAction);
 		}
+	}
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

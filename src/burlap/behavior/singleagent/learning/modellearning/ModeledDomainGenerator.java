@@ -8,6 +8,7 @@ import burlap.oomdp.core.states.State;
 import burlap.oomdp.singleagent.Action;
 import burlap.oomdp.singleagent.FullActionModel;
 import burlap.oomdp.singleagent.GroundedAction;
+import burlap.oomdp.visualizer.Visualizer;
 
 import java.util.List;
 
@@ -147,6 +148,24 @@ public class ModeledDomainGenerator implements DomainGenerator{
 			}
 			return actionList;
 		}
+	}
+
+
+
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

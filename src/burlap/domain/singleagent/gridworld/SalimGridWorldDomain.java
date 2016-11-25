@@ -1,5 +1,11 @@
 package burlap.domain.singleagent.gridworld;
 
+import burlap.assignment4.util.AgentPainter;
+import burlap.assignment4.util.LocationPainter;
+import burlap.assignment4.util.WallPainter;
+import burlap.oomdp.visualizer.StateRenderLayer;
+import burlap.oomdp.visualizer.Visualizer;
+
 public class SalimGridWorldDomain extends GridWorldDomain {
 	protected static int smallCaseDimension = 4;
 	protected static int largeCaseDimension = 40;

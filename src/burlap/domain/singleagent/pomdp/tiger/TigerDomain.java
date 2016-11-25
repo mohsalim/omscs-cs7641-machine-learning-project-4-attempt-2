@@ -34,6 +34,7 @@ import burlap.oomdp.singleagent.pomdp.SimulatedPOEnvironment;
 import burlap.oomdp.singleagent.pomdp.beliefstate.BeliefState;
 import burlap.oomdp.singleagent.pomdp.beliefstate.tabular.TabularBeliefState;
 import burlap.oomdp.statehashing.SimpleHashableStateFactory;
+import burlap.oomdp.visualizer.Visualizer;
 
 
 /**
@@ -585,6 +586,18 @@ public class TigerDomain implements DomainGenerator {
 
 		
 		
+	}
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

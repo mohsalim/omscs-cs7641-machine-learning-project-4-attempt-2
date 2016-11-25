@@ -32,6 +32,7 @@ import burlap.oomdp.stochasticgames.agentactions.SimpleSGAgentAction;
 import burlap.oomdp.stochasticgames.common.ConstantSGStateGenerator;
 import burlap.oomdp.stochasticgames.common.StaticRepeatedGameActionModel;
 import burlap.oomdp.stochasticgames.explorers.SGTerminalExplorer;
+import burlap.oomdp.visualizer.Visualizer;
 
 
 
@@ -920,6 +921,20 @@ public class SingleStageNormalFormGame implements DomainGenerator {
 		
 		exp.exploreFromState(SingleStageNormalFormGame.getState(domain));
 		
+	}
+
+
+	@Override
+	public int[][] getMap() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public Visualizer getVisualizer() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
